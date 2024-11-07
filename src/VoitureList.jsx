@@ -32,9 +32,9 @@ const VoitureList = () => {
             prixAchat: 210000,
         },
       ]);
-      const deleteVoiture = (matricule) => {
+      const deleteVoiture = (marque) => {
         setVoitures((prevVoitures) => 
-            prevVoitures.filter((voiture) => voiture.matricule !== matricule)
+            prevVoitures.filter((voiture) => voiture.marque !== marque)
         );
     };
     const totalVoitures = voitures.length;

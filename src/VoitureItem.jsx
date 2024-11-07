@@ -19,7 +19,7 @@ const VoitureItem = ({ marque, image, carburant, prixAchat, deleteVoiture }) => 
             <p>Carburant: {carburant}</p>
             <p>Prix d'achat: {prixAchat} MAD</p>
             <button onClick={changeFilter}>Change Couleur</button> 
-            <button onClick={() => deleteVoiture(matricule)}>Delete</button>
+            <button onClick={() => deleteVoiture(marque)}>Delete</button>
         </div>
     );
 };
